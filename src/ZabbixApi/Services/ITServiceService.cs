@@ -17,7 +17,7 @@ namespace ZabbixApi.Services
 
     public class ITServiceService : CRUDService<ITService, ITServiceService.ITServicesidsResult, ITServiceInclude>, IITServiceService
     {
-        public ITServiceService(IContext context) : base(context, "ITService") { }
+        public ITServiceService(IContext context) : base(context, "service") { }
 
         public override IEnumerable<ITService> Get(object filter = null, IEnumerable<ITServiceInclude> include = null, Dictionary<string, object> @params = null)
         {
